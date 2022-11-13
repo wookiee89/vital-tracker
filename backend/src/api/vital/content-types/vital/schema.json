@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vitals",
+  "info": {
+    "singularName": "vital",
+    "pluralName": "vitals",
+    "displayName": "Vital",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "systolic": {
+      "type": "integer"
+    },
+    "diastolic": {
+      "type": "integer"
+    },
+    "heartrate": {
+      "type": "integer"
+    },
+    "weight": {
+      "type": "decimal"
+    },
+    "createdDateTime": {
+      "type": "datetime"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    }
+  }
+}
