@@ -1,5 +1,4 @@
 import axios from "axios";
-import {} from 'dotenv/config'
 
 const url = process.env.REACT_APP_VITAL_TRACKER_API || "http://localhost:1337/api";
 
