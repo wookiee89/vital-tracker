@@ -31,17 +31,20 @@ const BarChart = () => {
                 return [data.systolic, data.diastolic];
               }),
               label: "Blood Pressure",
-              borderColor: 'rgb(255, 99, 132)',
-              backgroundColor: 'rgba(255, 99, 132, 0.2)',
+              borderColor: 'rgb(153, 102, 255)',
+              backgroundColor: 'rgba(153, 102, 255, 0.2)',
+              borderWidth: 1,
+              borderSkipped: false,
               order: 2
             },
             {
               type: 'line',
               label: 'Heart Rate',
-              borderColor: 'rgb(54, 162, 235)',
+              borderColor: 'rgb(75, 192, 192)',
               data: dailyData.map((data) => {
                 return data.heartrate;
               }),
+              tension: 0.5,
               order: 1
             }
           ],
