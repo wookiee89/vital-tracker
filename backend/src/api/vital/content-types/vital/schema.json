@@ -27,10 +27,10 @@
     "createdDateTime": {
       "type": "datetime"
     },
-    "user": {
+    "users_permissions_user": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "admin::user"
+      "target": "plugin::users-permissions.user"
     }
   }
 }
