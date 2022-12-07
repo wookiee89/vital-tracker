@@ -35,6 +35,16 @@ const BarChart = () => {
               backgroundColor: 'rgba(153, 102, 255, 0.2)',
               borderWidth: 1,
               borderSkipped: false,
+              order: 3
+            },
+            {
+              type: 'line',
+              label: 'Weight',
+              borderColor: 'rgb(75, 192, 192)',
+              data: dailyData.map((data) => {
+                return data.weight;
+              }),
+              tension: 0.5,
               order: 2
             },
             {
