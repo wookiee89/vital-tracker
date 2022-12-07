@@ -40,7 +40,7 @@ const BarChart = () => {
             {
               type: 'line',
               label: 'Weight',
-              borderColor: 'rgb(75, 192, 192)',
+              borderColor: 'rgb(255, 99, 132)',
               data: dailyData.map((data) => {
                 return data.weight;
               }),
